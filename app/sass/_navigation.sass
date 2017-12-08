@@ -1,0 +1,166 @@
+.navigation
+	padding-left: 10px
+	width: 100%
+	position: absolute
+	top: 0
+	z-index: 1
+	font-family: $light
+	&:after
+		content: ""
+		background-color: #000000
+		width: 100%
+		height: 100%
+		position: absolute
+		bottom: 0
+		left: 0
+		opacity: 0.8
+	nav
+		float: right
+	i
+		width: 13px
+		height: 13px
+	ul
+		display: inline-block
+		list-style: none
+		margin: 0
+		padding: 0
+		position: relative
+		z-index: 1
+		li
+			display: inline-block
+			cursor: pointer
+			position: relative
+			a
+				color: #ffffff
+				text-transform: uppercase
+				text-decoration: none
+				padding: 12px 15px
+				display: block
+				position: relative
+				font-size: 0.8em
+				&:after
+					content: ""
+					background-color: $accent-color
+					width: 100%
+					height: 4px
+					position: absolute
+					bottom: 0
+					left: 0
+					opacity: 0
+					transition: all 0.3s
+				&:hover
+					&:after
+						opacity: 1
+		.active
+			background-color: #464646
+			a
+				&:hover
+					background-color: transparent
+					&:after
+						opacity: 0
+	.search-nav
+		a
+			transition: all 0.3s
+			&:hover
+				background-color: $accent-color
+				&:after
+					opacity: 0 
+		input
+			width: 100%
+			background-color: #2A2A2A
+			border: none
+			padding: 3px
+			padding-left: 15px
+			color: #ffffff
+			height: 40px
+			outline: none
+			text-transform: capitalize
+			font-size: 0.8em
+			&::placeholder
+				font-size: 0.6em
+				text-transform: uppercase
+			&:focus
+				border: 1px solid $accent-color
+
+
+	.sub-nav
+		position: absolute
+		top: 45px
+		right: 0
+		background-color: #464646
+		width: 345px
+		opacity: 1
+		padding: 20px
+		display: none
+		li
+			display: block
+			background-color: #2A2A2A
+			margin: 1px
+			a
+				color: #ffffff
+				font-size: 0.8em
+				text-transform: uppercase
+				width: 100%
+				display: block
+				text-decoration: none
+				padding-left: 15px
+				padding: 5px
+				&:hover
+					background-color: $accent-color
+	.logo
+		float: left
+		position: relative
+		z-index: 1
+		a
+			text-decoration: none	
+			color: #cccccc
+			display: block
+			padding: 6px
+			transition: all ease 0.5s
+			&:hover
+				color: #ffffff
+				img
+					transform: rotate(180deg)
+		img
+			width: 33px
+			transition: all ease 0.5s
+			margin-right: 10px
+
+	.search-results
+		position: absolute
+		right: 0
+		top: 127px
+		width: 345px
+		background-color: #2A2A2A
+		opacity: 0.98
+		a
+			color: #ffffff
+			text-decoration: none
+			display: block
+			padding: 20px
+			border: 1px solid transparent
+			display: none
+			&:hover
+				border: 1px solid $accent-color
+			img
+				width: 80px
+				background-color: #ffffff
+				margin-right: 20px
+				float: left
+			h4
+				text-transform: uppercase
+				font-weight: normal				
+				margin: 0
+				margin-bottom: 5px
+				padding: 0
+				line-height: 20px
+				float: left
+				width: 200px
+				font-size: 0.9em
+				line-height: 16px
+			p
+				font-size: 0.8em
+				margin: 0
+				line-height: 14px
+				float: left
+				width: 200px

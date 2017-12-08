@@ -1,0 +1,133 @@
+.swiper
+	&-navigation
+		bottom: 60px
+		position: absolute
+		width: 100%
+		bottom: 10px
+		display: block
+		text-align: center
+		text-shadow: 0px 3px 3px rgba(0,0,0,0.3)
+	&-button-prev, &-button-next
+		background-image: none
+		top: 0
+		width: auto
+		height: auto
+		margin: 0 34px
+		padding: 0
+		left: 0
+		right: 0
+		position: relative
+		display: inline-block
+		i
+			font-size: 3em
+			color: #ffffff			
+	&-pagination
+		position: relative
+		display: inline-block		
+		&-bullet
+			box-shadow: 0px 3px 3px rgba(0,0,0,0.3)
+			width: 10px
+			height: 10px
+			margin: 10px 4px
+			background: #ffffff
+			opacity: 0.4
+			cursor: pointer
+
+		&-bullet-active
+			opacity: 1
+			width: 13px
+			height: 13px
+			margin: 9px 4px
+
+
+		
+	&-container
+		width: 100%
+		position: relative
+		z-index: 0
+		max-height: 640px
+		.slide
+			position: relative
+			z-index: 0		
+			img
+				width: 100%
+			&-text
+				position: absolute
+				top: 130px
+				right: 50px
+				width: 100%
+				text-align: right
+				h1, h2
+					color: #333333
+					text-transform: uppercase
+					margin: 0
+					padding: 0
+					display: block
+					width: 100%
+					text-align: right
+
+					
+
+				h1
+					font-size: 4.4em
+					font-family: $bold
+					letter-spacing: -3px
+					line-height: 0.88
+					margin-bottom: 15px
+					
+				h2
+					font-size: 2.3em
+					font-family: $light
+					line-height: 1.1
+					letter-spacing: -3px
+					margin-bottom: 25px
+				a
+					font-family: $light
+					text-transform: uppercase
+					text-decoration: none
+					color: #2A2A2A
+					background-color: #fff
+					padding: 8px 60px 8px 20px
+					display: inline-block
+					border-radius: 5px
+					position: relative
+					overflow: hidden	
+					transition: ease 0.5s		
+					span
+						position: relative
+						z-index: 1
+						
+					i
+						background-color: $accent-color
+						padding: 9px 16px
+						color: #ffffff
+						font-size: 1.6em
+						position: absolute
+						right: 0
+						top: 0
+						z-index: 1
+					&:after
+						content: ""
+						background-color: lighten($accent-color, 5%)
+						width: 0
+						height: 100%
+						position: absolute
+						right: 0
+						top: 0
+						transition: ease 0.3s
+						opacity: 1
+					&:hover
+						color: #ffffff
+						&:after
+							width: 100%
+
+		.slide:nth-child(even)
+			.slide-text
+				left: 50px
+				text-align: left
+				h1,h2
+					text-align: left
+					color: #ffffff
+					text-shadow: 0px 2px 2px rgba(0,0,0,0.12)
+
+					

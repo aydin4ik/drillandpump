@@ -1,6 +1,9 @@
 @import "fonts"
 @import "libs"
 @import "vars"
+@import "slider"
+@import "navigation"
+@import "products"
 
 *
 	-webkit-box-sizing: border-box
@@ -42,13 +45,61 @@ body
 	min-width: 320px
 	position: relative
 	line-height: 1.65
-	font-family: $default-font
+	font-family: $light
 	overflow-x: hidden
 	opacity: 1
+
+section
+	background-color: #fafafa
 
 .img-responsive
 	display: block
 	max-width: 100%
 	height: auto
+
+a
+	outline: none
+
+h1, h2
+	text-transform: uppercase
+	text-align: center
+	color: #282828	
+	margin: 0 auto
+	padding: 0
+h1
+	font-size: 50px
+	line-height: 50px
+	margin-top: 50px
+	letter-spacing: -2px
+h2
+	margin-top: 20px
+	line-height: 30px
+	font-size: 24px
+	font-family: $light
+	font-weight: lighter
+
+p
+	font-size: 0.8em
+	color: #444444
+	font-weight: lighter
+	font-family: $light
+	margin: 0
+	padding: 0
+	margin-top: 50px
+	line-height: 22px
+
+.clears
+	clear: both
+
+	
+
+
+
+
+				
+
+
+
+
 
 @import "media" // Всегда в конце
