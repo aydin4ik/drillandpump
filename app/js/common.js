@@ -167,7 +167,7 @@ $(function() {
 			}
 		}
 
-		
+
 		// var item = $('.search-item'),
 		// 	value = $('#search-form').find('input').val();
 
@@ -200,6 +200,17 @@ $(function() {
 
 
 
+	});
+	$('.products').isotope({
+		// options
+		itemSelector: '.product',
+		layoutMode: 'fitRows',
+		filter: '.main',
+	});
+	$('.products').on( 'click', 'div', function() {
+		var filterValue = $(this).attr('data-filter');
+		$('.products').isotope({ filter: filterValue });
+		console.log(filterValue);
 	});
 
 
