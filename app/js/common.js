@@ -201,16 +201,19 @@ $(function() {
 
 
 	});
+	
+
 	$('.products').isotope({
 		// options
 		itemSelector: '.product',
 		layoutMode: 'fitRows',
 		filter: '.main',
 	});
-	$('.products').on( 'click', 'div', function() {
+
+	$('.main').click(function(e){
+		e.preventDefault();
 		var filterValue = $(this).attr('data-filter');
 		$('.products').isotope({ filter: filterValue });
-		console.log(filterValue);
 	});
 
 
