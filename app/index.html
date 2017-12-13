@@ -183,13 +183,42 @@
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
 						<h1>təklİf etdİyİmİz məhsulların sİyahısı</h1>
+						<h2>Aşağıda şirkətimiz tərəfindən təqdim olunan məhsullar və avadanlıqlarla tanış ola bilərsiniz.</h2>
 				</div>
 								
 			</div>			
 		</div>
-			  
+		<div class="sorting">
+			<div class="container">
+				<ul class="sort">
+					<li class="selector">çeşİdləmə</li>
+					<li class="selector">
+						<input type="radio" id="show_all" name="selector">
+						<label for="show_all" data-filter=":not(.main)">hamisini göstər</label>
+						<div class="check"></div>
+					</li>
+					<li class="selector">
+						<input type="radio" id="show_main" name="selector">
+						<label for="show_main" data-filter=".main">əsasları göstər</label>
+						<div class="check"></div>
+					</li>
+					
+					<li class="size">
+						<input type="radio" id="show_small" name="size">
+						<label for="show_small">kiçik göstər</label>
+						<div class="check"></div>
+					</li>
+					<li class="size">
+						<input type="radio" id="show_large" name="size">
+						<label for="show_large">böyük göstər</label>
+						<div class="check"></div>
+					</li>
+					<li class="size">ölçü</li>
+				</ul>
+			</div>
+		</div>	  
 		<div class="products">
-			<div class="product main" data-filter=".pdc, .tricone, .bha">
+			<div class="product main large" data-filter=".pdc, .tricone, .bha">
 				<div class="product-head">
 					<img class="logo" src="img/logo.png" alt="logo">
 					<img src="img/products/drillbits.png" alt="drillbits" class="item">
@@ -200,10 +229,10 @@
 				<div class="product-body">
 					<h4>drill Bits</h4>
 					<p>Wide range of drill bits</p>
-					<button class="more">ətraflı öyrən <i class="fa fa-angle-right"></i></button>
+					<button class="more">daha çox <i class="fa fa-angle-right"></i></button>
 				</div>
 			</div>
-			<div class="product pdc">
+			<div class="product pdc large">
 				<div class="product-head">
 					<img class="logo" src="img/logo.png" alt="logo">
 					<img src="img/products/pdc.png" alt="pdc" class="item">
@@ -214,16 +243,16 @@
 				<div class="product-body">
 					<h4>PDC Bits</h4>
 					<p>Wide range of PDC bits</p>
-					<button class="more">ətraflı öyrən <i class="fa fa-angle-right"></i></button>
+					<a class="more" href="#">ətraflı öyrən <i class="fa fa-angle-right"></i></a>
 				</div>
 			</div>
-			<div class="product tricone">
+			<div class="product tricone large">
 				<div class="product-head">
 					<img class="logo" src="img/logo.png" alt="logo">
 					<img src="img/products/tricone.png" alt="pdc" class="item">
 					<h4>tricone bits</h4>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-					<h2>tricone</h2>
+					<h2>tric</h2>
 				</div>
 				<div class="product-body">
 					<h4>tricone bits</h4>
@@ -231,7 +260,7 @@
 					<button class="more">ətraflı öyrən <i class="fa fa-angle-right"></i></button>
 				</div>
 			</div>
-			<div class="product bha">
+			<div class="product bha large">
 				<div class="product-head">
 					<img class="logo" src="img/logo.png" alt="logo">
 					<img src="img/products/bha.png" alt="pdc" class="item">
@@ -245,31 +274,73 @@
 					<button class="more">ətraflı öyrən <i class="fa fa-angle-right"></i></button>
 				</div>
 			</div>
-			<div class="product main" data-filter=".pdc, .tricone, .bha">
+			<div class="product main large" data-filter=".pdc, .tricone, .bha">
 				<div class="product-head">
 					<img class="logo" src="img/logo.png" alt="logo">
-					<img src="img/products/pipes.png" alt="drillbits" class="item">
+					<img src="img/products/pipes.png" alt="drill pipes" class="item">
 					<h4>Drill pipes</h4>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
 					<h2>pipes</h2>
 				</div>
 				<div class="product-body">
-					<h4>drill Bits</h4>
-					<p>Wide range of drill bits</p>
+					<h4>drill pipes</h4>
+					<p>Wide range of drill pipes</p>
 					<button class="more">ətraflı öyrən <i class="fa fa-angle-right"></i></button>
 				</div>
 			</div>
-			<div class="product main" data-filter=".pdc, .tricone, .bha">
+			<div class="product main large" data-filter=".pdc, .tricone, .bha">
 				<div class="product-head">
 					<img class="logo" src="img/logo.png" alt="logo">
-					<img src="img/products/rods.png" alt="drillbits" class="item">
-					<h4>Drill pipes</h4>
+					<img src="img/products/rods.png" alt="sucker rods" class="item">
+					<h4>Sucker rods</h4>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
 					<h2>rods</h2>
 				</div>
 				<div class="product-body">
-					<h4>drill Bits</h4>
-					<p>Wide range of drill bits</p>
+					<h4>Sucker rods</h4>
+					<p>Wide range of Sucker rods</p>
+					<button class="more">ətraflı öyrən <i class="fa fa-angle-right"></i></button>
+				</div>
+			</div>
+			<div class="product main large" data-filter=".pdc, .tricone, .bha">
+				<div class="product-head">
+					<img class="logo" src="img/logo.png" alt="logo">
+					<img src="img/products/tools.png" alt="tools" class="item">
+					<h4>workover tools</h4>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+					<h2>tool</h2>
+				</div>
+				<div class="product-body">
+					<h4>workover tools</h4>
+					<p>Wide range of workover tools</p>
+					<button class="more">ətraflı öyrən <i class="fa fa-angle-right"></i></button>
+				</div>
+			</div>
+			<div class="product main large" data-filter=".pdc, .tricone, .bha">
+				<div class="product-head">
+					<img class="logo" src="img/logo.png" alt="logo">
+					<img src="img/products/pumps.png" alt="pumps" class="item">
+					<h4>pumps</h4>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+					<h2>pump</h2>
+				</div>
+				<div class="product-body">
+					<h4>pumps</h4>
+					<p>Wide range of pumps</p>
+					<button class="more">ətraflı öyrən <i class="fa fa-angle-right"></i></button>
+				</div>
+			</div>
+			<div class="product main large" data-filter=".pdc, .tricone, .bha">
+				<div class="product-head">
+					<img class="logo" src="img/logo.png" alt="logo">
+					<img src="img/products/preventers.png" alt="preventers" class="item">
+					<h4>preventers</h4>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+					<h2>prev</h2>
+				</div>
+				<div class="product-body">
+					<h4>preventers</h4>
+					<p>Wide range of preventers</p>
 					<button class="more">ətraflı öyrən <i class="fa fa-angle-right"></i></button>
 				</div>
 			</div>
@@ -280,7 +351,27 @@
 
 
 	</section>
+	<section id="services">
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+						<h1>Göstərdİyİmİz xİdmətlər və qİymət sİyasətİ</h1>
+						<h2>Aşağıda şirkətimiz tərəfindən təqdim olunan xİdmətlər, avadanlıqların təhcizatı mexanizmi, texniki dəstək, qiymət siyasəti kimi mövzularla tanış ola bilərsiniz.</h2>
+				</div>
+				<div class="col-md-6">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum dolor quibusdam saepe numquam, fugiat illum ab dolores magni optio nemo quo tempora aspernatur perspiciatis sunt maxime nam reprehenderit aliquid distinctio officia perferendis vero odio quae cumque quidem? Eaque, officia itaque maiores, nulla repellendus natus reprehenderit, consequatur modi nisi voluptatem placeat?</p>
+				</div>
+				<div class="col-md-6">
+					<p>Omnis temporibus quaerat non, ducimus porro fuga saepe! Amet minima nulla consequatur eos repudiandae! Ipsam, rem necessitatibus quo itaque quas voluptatum quis temporibus nesciunt cupiditate accusamus ullam doloribus a tempore. Modi blanditiis unde explicabo perferendis vitae corporis, quam similique totam dolore tempora numquam officiis aliquid eum, adipisci ratione deleniti eos!</p>
+				</div>
+				<div class="col-md-6 col-md-offset-3">
+					<p>Labore perferendis enim perspiciatis provident eius aliquid laborum molestiae! Voluptatum, reiciendis impedit dolorum similique repellat pariatur nulla quod deleniti est natus iusto debitis. Deleniti neque temporibus, labore eveniet, architecto reiciendis nemo itaque tenetur maxime suscipit eaque minus? Dolorem tenetur odit veritatis quasi quam consectetur, laudantium beatae, laborum maiores quas minus!</p>
+				</div>
+			</div>			
+		</div>
 
+	</section>
 	
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>

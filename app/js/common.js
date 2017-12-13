@@ -211,11 +211,42 @@ $(function() {
 	});
 
 	$('.main').click(function(e){
-		e.preventDefault();
 		var filterValue = $(this).attr('data-filter');
 		$('.products').isotope({ filter: filterValue });
+
+		$('input[name="selector"]').prop('checked', false);
 	});
 
 
+	$('.sort').on('click', 'label', function(){
+		var filterValue = $(this).attr('data-filter'),
+			inputName =  $(this).parent().find('input').attr('name'),
+			inputId =  $(this).parent().find('input').attr('id');
 
+			if ( inputName == 'selector'){
+				$('.products').isotope({ filter: filterValue });
+			}
+			if ( inputId == 'show_large' && inputName == 'size'){
+				
+				if( !$('.product').hasClass('large')){
+					$('.product').toggleClass('large');
+					$('.product').toggleClass('small');
+					$('.products').isotope({ filter: ".main" });
+					$('input[name="selector"]').prop('checked', false)
+				}
+				
+			}
+
+			if ( inputId == 'show_small' && inputName == 'size'){				
+				if( !$('.product').hasClass('small')){
+					$('.product').toggleClass('large');
+					$('.product').toggleClass('small');
+					$('.products').isotope({ filter: ".main" });
+					$('input[name="selector"]').prop('checked', false)
+				}
+				
+			}
+
+
+	});
 });
